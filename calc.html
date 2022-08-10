@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid  py-5 header">
+       <div class="row my-5">
+            <div class="col-lg-4">
+            
+            </div>
+            <div class="col-lg-4  my-5 p-5 text-dark  bg-opacity-50" style="background-color: rgb(51, 51, 51);" id="result">
+                <div class="d-flex justify-content-between ">
+                    <input class="w-75 bg-white textsize m-1 border border-black border-3 p-2 " id="res">
+                    
+                    </input>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="clearBox()" value="">clear</button>
+    
+                </div>
+                <div class="d-flex justify-content-between ">
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="displayNumber('7')">7</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="displayNumber('8')">8</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg"onclick="displayNumber('9')">9</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="backSpace('Del')">DEL</button>
+                </div>
+                <div class="d-flex justify-content-between ">
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg"onclick="displayNumber('4')">4</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg"onclick="displayNumber('5')">5</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg"onclick="displayNumber('6')">6</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="displayNumber('-')">-</button>
+                </div>
+                <div class="d-flex justify-content-between ">
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="displayNumber('1')">1</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="displayNumber('2')">2</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="displayNumber('3')">3</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg"onclick="displayNumber('/')">/</button>
+                </div>
+                <div class="d-flex justify-content-between ">
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="displayNumber('.')">.</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="displayNumber('0')">0</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="evaluateExpression()">=</button>
+                    <button type="button" class="btn btn-outline-secondary w-25  rounded m-1 btn-lg" onclick="displayNumber('+')">+</button>
+                    
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                
+            </div>
+       </div>
+      
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
